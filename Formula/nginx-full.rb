@@ -114,6 +114,7 @@ class NginxFull < Formula
   depends_on "icu4c" if build.with? "xsltproc-module"
   depends_on "libxml2" if build.with? "xsltproc-module"
   depends_on "libxslt" if build.with? "xsltproc-module"
+  depends_on "libmaxminddb" if build.with? "geoip2-module"
   depends_on "gperftools" => :optional
   depends_on "gd" => :optional
   depends_on "imlib2" => :optional
